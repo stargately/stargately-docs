@@ -1,5 +1,5 @@
 ---
-id: doc1
+id: onefx-web
 title: Web
 sidebar_label: Web
 slug: /
@@ -60,7 +60,7 @@ NODE_ENV=production npm run start
 
 We use prettier, tslint, and editorconfig to enforce consistent styles across the whole project, so that we will not bikeshed on coding styles in the code review.
 
-However, please visit our [Contributing Code](/contributing.html) before submitting your code.
+However, please visit our [Contributing Code](/docs/onefx-style-guide) before submitting your code.
 
 ## Architecture
 

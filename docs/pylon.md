@@ -1,5 +1,5 @@
 ---
-id: mdx
+id: pylon
 title: Getting Started
 ---
 

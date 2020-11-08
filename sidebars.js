@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    ["OneFx.JS: Fullstack Framework"]: ['doc1', 'doc2', 'doc3', 'doc4'],
-    ["Pylon: Stripe Subscription Manager"]: ['mdx'],
+    ["OneFx.JS: Fullstack Framework"]: ['onefx-web', 'onefx-mobile', 'onefx-style-guide', 'onefx-roadmap'],
+    ["Pylon: Stripe Subscription Manager"]: ['pylon'],
   },
 };

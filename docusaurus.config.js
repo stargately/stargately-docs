@@ -5,8 +5,8 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'puncsky', // Usually your GitHub org/user name.
+  projectName: 'stargately-docs', // Usually your repo name.
   stylesheets: [
     'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
   ],
@@ -14,7 +14,7 @@ module.exports = {
     navbar: {
       title: 'Stargately',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Stargately',
         src: 'img/logo.svg',
       },
       items: [
@@ -44,7 +44,7 @@ module.exports = {
             },
             {
               label: 'Pylon Stripe Subscription Manager',
-              to: 'docs/doc2/',
+              to: 'docs/onefx-mobile/',
             },
           ],
         },
@@ -86,13 +86,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/puncsky/stargately-docs/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/puncsky/stargately-docs/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

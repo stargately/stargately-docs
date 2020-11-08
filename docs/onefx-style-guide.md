@@ -1,5 +1,5 @@
 ---
-id: doc3
+id: onefx-style-guide
 title: Style Guide
 ---
 
