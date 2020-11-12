@@ -126,6 +126,7 @@ However, please visit our [Contributing Code](/docs/onefx-style-guide) before su
 # Guides
 
 ## State management
+
 We use redux to manage state in onefx.js. To pass the state from the server to the initial page during the server-side rendering, in the server use `ctx.setState(path, val)` to set the state:
 
 ```js
@@ -203,6 +204,7 @@ client-side routing is using [react-router v4](https://reacttraining.com/react-r
 
 We use Apollo Graphql and TypeGraphQL for universal rendering with React. For detailed documentation, please visit:
 
+1. [See "+1" example in the boilerplate](https://github.com/puncsky/web-onefx-boilerplate/commit/cd154e7bafee14bfb1c69cb72120ffef09a40c8e#diff-c3a9df310a6e24800e26275ad14f3db9353ce4b02c4457f83416d15fa276335dR6)
 1. [Define GraphQL schemas in TypeScript](https://typegraphql.ml/docs/getting-started.html)
 2. [Learn how to fetch data with the Apollo Query component](https://www.apollographql.com/docs/tutorial/queries/)
 
