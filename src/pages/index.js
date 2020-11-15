@@ -75,6 +75,16 @@ function Home() {
             >
               Documentations
             </Link>
+
+            <Link
+                className={clsx(
+                    "button button--outline button--secondary button--lg",
+                    styles.getStarted
+                )}
+                to={useBaseUrl("/#showcase")}
+            >
+              Showcase
+            </Link>
           </div>
         </div>
       </header>

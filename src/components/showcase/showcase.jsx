@@ -71,7 +71,11 @@ function Showcase() {
     <>
       <main className="container margin-vert--lg">
         <div className="text--center margin-bottom--xl">
-          <h1>{TITLE}</h1>
+            <h1><a aria-hidden="true" tabIndex="-1"
+                   className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
+                   id="showcase"></a>{TITLE}<a aria-hidden="true" tabIndex="-1" className="hash-link"
+                                                                href="#showcase"
+                                                                title="Direct link to heading">#</a></h1>
           <p>{DESCRIPTION}</p>
         </div>
         <div className="row">
