@@ -38,6 +38,14 @@ const users = [
         pinned: false,
     },
     {
+        title: 'TianPan.co',
+        description: 'A blog on patterns and best practices for startup engineering',
+        preview: "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
+        website: 'https://tianpan.co/',
+        fbOpenSource: false,
+        pinned: false,
+    },
+    {
         title: 'Pylon',
         description: 'Stripe Subscription Manager',
         preview: "https://stargately.com/img/pylon-architecture.png",
