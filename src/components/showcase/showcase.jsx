@@ -59,7 +59,7 @@ const users = [
         description: 'Email / SMS / Push Notification manager',
         preview: "https://touchbase.ai/social-media.svg",
         // website: 'https://touchbase.ai/',
-        // source: 'https://github.com/puncsky/touchbase.ai',
+        source: 'https://github.com/puncsky/carrier#carrier',
         fbOpenSource: false,
         pinned: false,
     },
