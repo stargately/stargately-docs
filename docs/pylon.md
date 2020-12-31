@@ -1,6 +1,6 @@
 ---
 id: pylon
-title: Getting Started
+title: Pylon Stripe Subscription Manager
 ---
 
 Pylon is a micro service to manage Stripe subscriptions.
