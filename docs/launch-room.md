@@ -34,11 +34,10 @@ const spendingReportSubscriptionFeature = await lr.variation(
 In app root
 
 ```tsx
-export function App(props: Props): JSX.Element {
+export function App(): JSX.Element {
   const [LDProvider, setFlagsLoaded] = useState<null | React.FC>(null);
   const ldClient = useLDClient();
   useEffect(() => {
-    initGoogleAnalytics({ tid: props.googleTid });
     (async () => {
       try {
         const Provider = await asyncWithLDProvider({
