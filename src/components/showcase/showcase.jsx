@@ -17,61 +17,64 @@ const DESCRIPTION =
 
 
 const users = [
-    // Please add in alphabetical order of title.
-    {
-        title: 'Beancount.io',
-        description:
-            'Double-entry bookkeeping for managing your teams and personal finance',
-        preview: "https://web-beancount.b-cdn.net/beancount-desktop-mobile.png",
-        website: 'https://beancount.io/',
-        source: 'https://github.com/puncsky/beancount-mobile',
-        fbOpenSource: false,
-        pinned: false,
-    },
-    {
-        title: 'Touchbase.ai',
-        description: 'Easy, open source CRM for everyone to smartly engage more in meaningful relationships',
-        preview: "https://camo.githubusercontent.com/f00c5426be1a19c10cf8596495ba80fec5c3a1e18f1d48466b6c80aad0b5035e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646f687469646671682f696d6167652f75706c6f61642f76313537303138313032392f7765622d6775696775696f2f6775616e78696c61622d73637265656e73686f742e706e67",
-        website: 'https://touchbase.ai/',
-        source: 'https://github.com/puncsky/touchbase.ai',
-        fbOpenSource: false,
-        pinned: false,
-    },
-    {
-        title: 'TianPan.co',
-        description: 'A blog on patterns and best practices for startup engineering',
-        preview: "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
-        website: 'https://tianpan.co/',
-        fbOpenSource: false,
-        pinned: false,
-    },
-    {
-        title: 'Pylon',
-        description: 'Stripe Subscription Manager',
-        preview: "https://stargately.com/img/pylon-architecture.png",
-        // website: 'https://touchbase.ai/',
-        // source: 'https://github.com/puncsky/touchbase.ai',
-        fbOpenSource: false,
-        pinned: false,
-    },
-    {
-        title: 'Carrier',
-        description: 'Email / SMS / Push Notification manager',
-        preview: "https://touchbase.ai/social-media.svg",
-        // website: 'https://touchbase.ai/',
-        source: 'https://github.com/puncsky/carrier#carrier',
-        fbOpenSource: false,
-        pinned: false,
-    },
-    {
-        title: 'Launchroom',
-        description: 'LaunchDarkly client compatible lightweight feature flag manager',
-        preview: "https://touchbase.ai/social-media.svg",
-        // website: 'https://touchbase.ai/',
-        // source: 'https://github.com/puncsky/touchbase.ai',
-        fbOpenSource: false,
-        pinned: false,
-    },
+  // Please add in alphabetical order of title.
+  {
+    title: 'Beancount.io',
+    description:
+      'Double-entry bookkeeping for managing your teams and personal finance',
+    preview: "https://web-beancount.b-cdn.net/beancount-desktop-mobile.png",
+    website: 'https://beancount.io/',
+    source: 'https://github.com/puncsky/beancount-mobile',
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: 'Touchbase.ai',
+    description: 'Easy, open source CRM for everyone to smartly engage more in meaningful relationships',
+    preview: "https://camo.githubusercontent.com/f00c5426be1a19c10cf8596495ba80fec5c3a1e18f1d48466b6c80aad0b5035e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646f687469646671682f696d6167652f75706c6f61642f76313537303138313032392f7765622d6775696775696f2f6775616e78696c61622d73637265656e73686f742e706e67",
+    website: 'https://touchbase.ai/',
+    source: 'https://github.com/puncsky/touchbase.ai',
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: 'TianPan.co',
+    description: 'A blog on patterns and best practices for startup engineering',
+    preview: "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
+    website: 'https://tianpan.co/',
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: 'Launch Room',
+    description: 'LaunchDarkly client compatible lightweight feature flag manager',
+    preview: "https://touchbase.ai/social-media.svg",
+    // website: 'https://touchbase.ai/',
+    // source: 'https://github.com/puncsky/touchbase.ai',
+    doc: "/docs/launch-room",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: 'Pylon',
+    description: 'Stripe Subscription Manager',
+    preview: "https://stargately.com/img/pylon-architecture.png",
+    // website: 'https://touchbase.ai/',
+    // source: 'https://github.com/puncsky/touchbase.ai',
+    doc: "/docs/pylon",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: 'Carrier',
+    description: 'Email / SMS / Push Notification manager',
+    preview: "https://touchbase.ai/social-media.svg",
+    // website: 'https://touchbase.ai/',
+    source: 'https://github.com/puncsky/carrier#carrier',
+    doc: "/docs/carrier",
+    fbOpenSource: false,
+    pinned: false,
+  },
 ];
 
 function Showcase() {
@@ -79,11 +82,11 @@ function Showcase() {
     <>
       <main className="container margin-vert--lg">
         <div className="text--center margin-bottom--xl">
-            <h1><a aria-hidden="true" tabIndex="-1"
-                   className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
-                   id="showcase"></a>{TITLE}<a aria-hidden="true" tabIndex="-1" className="hash-link"
-                                                                href="#showcase"
-                                                                title="Direct link to heading">#</a></h1>
+          <h1><a aria-hidden="true" tabIndex="-1"
+                 className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
+                 id="showcase"></a>{TITLE}<a aria-hidden="true" tabIndex="-1" className="hash-link"
+                                             href="#showcase"
+                                             title="Direct link to heading">#</a></h1>
           <p>{DESCRIPTION}</p>
         </div>
         <div className="row">
@@ -91,7 +94,7 @@ function Showcase() {
             <div key={user.title} className="col col--4 margin-bottom--lg">
               <div className={clsx("card", styles.showcaseUser)}>
                 <div className="card__image">
-                  <img src={user.preview} alt={user.title} />
+                  <img src={user.preview} alt={user.title}/>
                 </div>
                 <div className="card__body">
                   <div className="avatar">
@@ -103,7 +106,7 @@ function Showcase() {
                     </div>
                   </div>
                 </div>
-                {(user.website || user.source) && (
+                {(user.website || user.source || user.doc) && (
                   <div className="card__footer">
                     <div className="button-group button-group--block">
                       {user.website && (
@@ -124,6 +127,16 @@ function Showcase() {
                           rel="noreferrer noopener"
                         >
                           Source
+                        </a>
+                      )}
+                      {user.doc && (
+                        <a
+                          className="button button--small button--secondary button--block"
+                          href={user.doc}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Doc
                         </a>
                       )}
                     </div>

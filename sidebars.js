@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     ["OneFx.JS: Fullstack Framework"]: ['onefx-web', 'onefx-mobile', 'onefx-style-guide', 'onefx-roadmap'],
-    ["Micro Platforms"]: ['carrier', 'pylon'],
+    ["Micro Platforms"]: ['launch-room', 'carrier', 'pylon'],
     ["🗼 Tech Radar"]: [
       "tech-radar-techniques",
       "tech-radar-platforms",
