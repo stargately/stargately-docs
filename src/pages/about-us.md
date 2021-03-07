@@ -19,10 +19,10 @@ Core members are from Google, Facebook, Uber, and silicon valley startups.
 
 We engage community members in two categories:
 
-| Categories | Why & What we do |
+| Categories |  |
 | --- | --- |
 | Core Developers | We are building community with open source software at [GitHub](https://github.com/stargately)  |
-| Study Groups | [10x.pub System Design and Architecture](https://github.com/puncsky/system-design-and-architecture) |
+| Study Groups | We discuss [System Design and Architecture](https://github.com/puncsky/system-design-and-architecture) at 10x.pub |
 
 ## Community Culture
 
