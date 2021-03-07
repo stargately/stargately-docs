@@ -65,6 +65,10 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'About Us',
+              to: '/about-us',
+            },
+            {
               label: 'Blog',
               href: 'https://tianpan.co/',
             },
