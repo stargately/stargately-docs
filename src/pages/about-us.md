@@ -30,7 +30,7 @@ Think big and act on it
 * Engineers build things anyway. Why not make them big?
 * Bias toward action
 * Build positive feedback loops
-* Know our goals and situations, diagnosis them, and then work in both directions
+* Dig the tunnel from two directions
 
 Seek truth from facts
 * Embrace radical transparency
