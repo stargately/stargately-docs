@@ -27,3 +27,10 @@
 :root {
   --ifm-font-family-base: Open Sans,Helvetica Neue,sans-serif,Microsoft YaHei !important;
 }
+
+figcaption{
+  color:#646f7a;
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+}
