@@ -25,7 +25,11 @@
 }
 
 :root {
-  --ifm-font-family-base: Open Sans,Helvetica Neue,sans-serif,Microsoft YaHei !important;
+  --ifm-font-family-base: -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif, Microsoft YaHei;
+}
+
+h1, h2, h3, h4 {
+  font-family: Zen Kaku Gothic New, -apple-system , BlinkMacSystemFont , "Segoe UI" , "Roboto" , "Helvetica Neue" , "Ubuntu" , sans-serif, Microsoft YaHei !important;
 }
 
 figcaption{

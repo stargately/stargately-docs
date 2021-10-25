@@ -8,7 +8,7 @@ module.exports = {
   organizationName: 'puncsky', // Usually your GitHub org/user name.
   projectName: 'stargately-docs', // Usually your repo name.
   stylesheets: [
-    'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
+    'https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+New',
   ],
   themeConfig: {
     navbar: {
@@ -24,7 +24,7 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        // {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/puncsky/stargately-docs',
           label: 'GitHub',
