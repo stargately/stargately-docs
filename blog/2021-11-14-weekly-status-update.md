@@ -17,7 +17,7 @@ tags: [weekly status update]
 
 ## BoomMo Beta
 
-Last Week: Velocity: 8(2+6+1) tasks / week
+Last Week: Velocity: 9(2+6+1) tasks / week
 
 * finished multi-in and multi-out voting contract
 * Migrate Webpack to v5 from v4
