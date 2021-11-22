@@ -4,7 +4,7 @@ title: 2021-10-31 Weekly status update
 author: Dora Noda
 author_title: Stargately Core Team
 author_url: https://github.com/stargately/
-author_image_url: https://avatars.githubusercontent.com/u/38552114?v=4
+author_image_url: https://tp-misc.b-cdn.net/doranoda.JPG
 tags: [weekly status update]
 ---
 
