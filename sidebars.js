@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    ["Fullstack Developer Guide"]: [
+    ["Contributor Guide"]: [
       "onefx-web",
       "onefx-mobile",
       "onefx-style-guide",
