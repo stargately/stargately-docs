@@ -1,6 +1,6 @@
 ---
 id: carrier
-title: Carrier Email Template Service
+title: Email Template
 ---
 
 Carrier is a micro service to manage Email notification templates. You can easily create or update your email templates on it, and it will convert simple HTML texts into MJML-generated Email. Once you provided your SendGrid, Carrier will issue a `carrierToken` for your service to call and send the generated email with certain data payload.

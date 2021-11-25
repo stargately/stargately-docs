@@ -1,6 +1,6 @@
 ---
 id: launch-room
-title: Launch Room Feature Flag Service
+title: Feature Flag
 ---
 
 Launch Room is a feature flag service that is lightweight and compatible with LaunchDarkly client.
