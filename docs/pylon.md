@@ -248,3 +248,54 @@ export const useCreateSubscriptionSession = () => {
   };
 };
 ```
+
+## query PaymentSubscription
+
+```gql
+query PaymentSubscription($clientId: String!, $userId: String!) {
+  paymentSubscription(clientId: $clientId, userId: $userId) {
+    _id
+    userId
+    status
+    clientId
+    status
+    stripe {
+      planId
+      subscriptionId
+      productId
+      subscriptionStatus
+      customerId
+    }
+    paymentMethod
+    nextBillingDate
+    currentPeriodEnd
+    currentPeriodStart
+    cancelAt
+  }
+}
+```
+
+```json
+{
+  "userId": "",
+  "clientId": ""
+}
+```
+
+## cancel subscription
+
+
+```gql
+mutation CancelSubscription($clientId: String!, $userId: String!) {
+  cancelSubscription(clientId: $clientId, userId: $userId) {
+    ok
+  }
+}
+```
+
+```json
+{
+  "userId": "",
+  "clientId": ""
+}
+```
