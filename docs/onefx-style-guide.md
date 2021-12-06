@@ -3,7 +3,7 @@ id: onefx-style-guide
 title: Style Guide
 ---
 
-We recommend React developers to follow [React Bits: A compilation of React Patterns, techniques, tips and tricks.](https://github.com/vasanthk/react-bits). And the following is our basic code review guidelines.
+We recommend React developers to follow [React Bits: A compilation of React Patterns, techniques, tips and tricks.](https://github.com/vasanthk/react-bits). And the following is our basic code review guideline.
 
 ## Avoid Bad Practices
 
