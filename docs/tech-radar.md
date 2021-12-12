@@ -11,11 +11,11 @@ Here are the technologies that Stargately is using and recommending to teams tha
 
 ## Techniques
 
-| Syntax         | Description                                                                             | Status |
-| -------------- | --------------------------------------------------------------------------------------- | ------ |
-| React Hooks    | [Simplify local state management](https://reactjs.org/docs/hooks-intro.html#motivation) | Adopt  |
-| CSS-in-JS      | Modularize components and its styles                                                    | Adopt  |
-| Apollo GraphQL | Simplify global state management with remote GraphQL APIs                               | Adopt  |
+| Syntax         | Description                                               | Status |
+| -------------- | --------------------------------------------------------- | ------ |
+| React Hooks    | Simplify local state management                           | Adopt  |
+| CSS-in-JS      | Modularize components and its styles                      | Adopt  |
+| Apollo GraphQL | Simplify global state management with remote GraphQL APIs | Adopt  |
 
 ## Platforms
 
@@ -38,7 +38,7 @@ Here are the technologies that Stargately is using and recommending to teams tha
 
 ## Language & Frameworks
 
-| Syntax     | Description               | Status |
-| ---------- | ------------------------- | ------ |
-| TypeScript | Fullstack dev that scales | Adopt  |
-| Koa        | HTTP server with async/await built-in              | Adopt  |
+| Syntax     | Description                           | Status |
+| ---------- | ------------------------------------- | ------ |
+| TypeScript | Fullstack dev that scales             | Adopt  |
+| Koa        | HTTP server with async/await built-in | Adopt  |

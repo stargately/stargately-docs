@@ -18,7 +18,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/onefx-web",
+          to: "docs/",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
