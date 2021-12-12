@@ -1,4 +1,4 @@
-<p align="center"><a href="https://stargately.com" target="_blank" rel="noopener noreferrer"><img width="100" src="https://stargately.com/favicon.png" alt="Stargately Logo"></a></p>
+<p align="center"><a href="https://stargately.com" target="_blank" rel="noopener noreferrer"><img width="100" src="https://stargately.com/img/logo.svg" alt="Stargately Logo"></a></p>
 
 <h1 align="center">Stargately Documentations</h2>
 
