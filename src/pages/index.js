@@ -5,34 +5,52 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import Showcase from "../components/showcase/showcase";
+import StargatelyProducts from "../components/products/stargately-products";
+import IconExternalLink from "@theme/IconExternalLink";
+import CloudServices from "../components/cloud-services/cloud-services";
 
 const features = [
   {
-    title: "Open source micro services for modern SaaS",
+    title: "Micro Services & Dev Tools",
     imageUrl: "img/undraw_docusaurus_mountain.svg",
     description: (
-      <>We prepare out-of-box services for your SaaS to take and use.</>
-    ),
-  },
-  {
-    title: "Team as a Service",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
-    description: (
       <>
-        We are an engineering team that helps entrepreneurs and startups build
-        products from scratch, including mobile apps, SaaS/websites, Chrome
-        extensions, backends, and data analysis services.
+        <>
+          We prepare out-of-box services and developer tools for your SaaS -
+          Easy to use, and less expensive.
+        </>
+        <br />
+        <a href="#CloudServices">Stargately Cloud</a>
       </>
     ),
   },
   {
-    title: "By the Community, For the Community",
+    title: "FinTech + DAO Products",
+    imageUrl: "img/undraw_docusaurus_tree.svg",
+    description: (
+      <>
+        <>
+          We build various SaaS products for communities and individuals to grow
+          financially, socially, and intellectually.
+        </>
+        <br />
+        <a href="#showcase">Stargately Products</a>
+      </>
+    ),
+  },
+  {
+    title: "10x.pub Community",
     imageUrl: "img/undraw_docusaurus_react.svg",
     description: (
       <>
-        We are an open source community that embrace incremental innovations and
-        accumulate advantages over time.
+        <>
+          We are a tech community that embrace incremental innovations and
+          accumulate advantages over time.
+        </>
+        <br />
+        <a href={"https://10x.pub"}>
+          10x.pub <IconExternalLink />
+        </a>
       </>
     ),
   },
@@ -63,29 +81,10 @@ function Home() {
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{Math.random() > 0.5 ? siteConfig.title : "Think big and act on it"}</h1>
+          <h1 className="hero__title">
+            {Math.random() > 0.5 ? siteConfig.title : "Think big and act on it"}
+          </h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
-              )}
-              to={useBaseUrl("docs/")}
-            >
-              Documentations
-            </Link>
-
-            <Link
-                className={clsx(
-                    "button button--outline button--secondary button--lg",
-                    styles.getStarted
-                )}
-                to={useBaseUrl("/#showcase")}
-            >
-              Showcase
-            </Link>
-          </div>
         </div>
       </header>
       <main>
@@ -100,7 +99,8 @@ function Home() {
             </div>
           </section>
         )}
-        <Showcase/>
+        <StargatelyProducts />
+        <CloudServices />
       </main>
     </Layout>
   );

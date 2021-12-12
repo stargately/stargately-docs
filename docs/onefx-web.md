@@ -2,14 +2,14 @@
 id: onefx-web
 title: Web
 sidebar_label: Web
-slug: /
+slug: /onefx-web
 ---
 
 OneFx is a full-stack framework for building web apps. Here are the features you’ll find in Onefx.js:
 
-* Server-side rendering and universal rendering with React and Redux
-* Apollo GraphQL (docs + playground), ES2017, TypeScript, TSX support out of the box
-* Server-side development via Koa.js
+- Server-side rendering and universal rendering with React and Redux
+- Apollo GraphQL (docs + playground), ES2017, TypeScript, TSX support out of the box
+- Server-side development via Koa.js
 
 ## Create a project
 
@@ -18,7 +18,8 @@ git clone https://github.com/puncsky/web-onefx-boilerplate.git my-awesome-projec
 ```
 
 ## Run your project
-This is intended for *nix users. If you use Windows, go to [Run on Windows](#run-on-windows). Let’s first prepare the environment.
+
+This is intended for \*nix users. If you use Windows, go to [Run on Windows](#run-on-windows). Let’s first prepare the environment.
 
 ```bash
 cd my-awesome-project
@@ -30,6 +31,7 @@ cp ./.env.tmpl ./.env
 ```
 
 ### Development mode
+
 To run your project in development mode, run:
 
 ```bash
@@ -39,6 +41,7 @@ npm run watch
 The development site will be available at [http://localhost:5000](http://localhost:5000).
 
 ### Production Mode
+
 It’s sometimes useful to run a project in production mode, for example, to check bundle size or to debug a production-only issue. To run your project in production mode locally, run:
 
 ```bash
@@ -48,12 +51,12 @@ NODE_ENV=production npm run start
 
 ### NPM scripts
 
-* `npm run test`: test the whole project and generate a test coverage
-* `npm run ava ./path/to/test-file.js`: run a specific test file
-* `npm run build`: build source code from `src` to `dist`
-* `npm run lint`: run the linter
-* `npm run flow`: run the flow type check
-* `npm run kill`: kill the node server occupying the port 4100.
+- `npm run test`: test the whole project and generate a test coverage
+- `npm run ava ./path/to/test-file.js`: run a specific test file
+- `npm run build`: build source code from `src` to `dist`
+- `npm run lint`: run the linter
+- `npm run flow`: run the flow type check
+- `npm run kill`: kill the node server occupying the port 4100.
 
 ## Code Styles
 
@@ -129,14 +132,12 @@ However, please visit our [Contributing Code](/docs/onefx-style-guide) before su
 We use redux to manage state in onefx.js. To pass the state from the server to the initial page during the server-side rendering, in the server use `ctx.setState(path, val)` to set the state:
 
 ```js
-server.get('SPA', '/*', function onRoute(ctx) {
-  ctx.setState('base.sampleState', 'this is a sample initial state');
+server.get("SPA", "/*", function onRoute(ctx) {
+  ctx.setState("base.sampleState", "this is a sample initial state");
   ctx.body = ctx.isoReactRender({
-    VDom: (
-      <AppContainer/>
-    ),
+    VDom: <AppContainer />,
     reducer: noopReducer,
-    clientScript: '/main.js',
+    clientScript: "/main.js",
   });
 });
 ```
@@ -144,24 +145,23 @@ server.get('SPA', '/*', function onRoute(ctx) {
 And use the state in the react component:
 
 ```js
-const SampleStateContainer = connect(
-  state => ({text: state.base.sampleState})
-)(function SampleState({text}) {
-  return (
-    <div>{text}</div>
-  );
+const SampleStateContainer = connect((state) => ({
+  text: state.base.sampleState,
+}))(function SampleState({ text }) {
+  return <div>{text}</div>;
 });
 ```
 
 ## Styling
+
 We support both global styles with [sass](https://sass-lang.com/guide) in `./src/client/stylesheets/main.scss` and modular styles with [styletron-react](https://github.com/styletron/styletron/blob/master/packages/styletron-react/README.md):
 
 ```js
-import react from 'react';
-import {styled} from 'onefx/lib/styletron-react';
+import react from "react";
+import { styled } from "onefx/lib/styletron-react";
 
-const Panel = styled('div', {
-  backgroundColor: 'silver',
+const Panel = styled("div", {
+  backgroundColor: "silver",
 });
 
 export default <Panel>Hello</Panel>;
@@ -173,19 +173,19 @@ server-side routing is using [koa-router](https://github.com/alexmingoia/koa-rou
 
 ```js
 server
-  .get('/', (ctx, next) => {
-    ctx.body = 'Hello World!';
+  .get("/", (ctx, next) => {
+    ctx.body = "Hello World!";
   })
-  .post('/users', (ctx, next) => {
+  .post("/users", (ctx, next) => {
     // ...
   })
-  .put('/users/:id', (ctx, next) => {
+  .put("/users/:id", (ctx, next) => {
     // ...
   })
-  .del('/users/:id', (ctx, next) => {
+  .del("/users/:id", (ctx, next) => {
     // ...
   })
-  .all('/users/:id', (ctx, next) => {
+  .all("/users/:id", (ctx, next) => {
     // ...
   });
 ```
@@ -194,8 +194,8 @@ client-side routing is using [react-router v4](https://reacttraining.com/react-r
 
 ```js
 <Switch>
-  <Route exact path='/' component={Home}/>
-  <Route component={NotFound}/>
+  <Route exact path="/" component={Home} />
+  <Route component={NotFound} />
 </Switch>
 ```
 
@@ -205,7 +205,7 @@ We use Apollo Graphql and TypeGraphQL for universal rendering with React. For de
 
 1. [See "+1" example in the boilerplate](https://github.com/puncsky/web-onefx-boilerplate/commit/cd154e7bafee14bfb1c69cb72120ffef09a40c8e#diff-c3a9df310a6e24800e26275ad14f3db9353ce4b02c4457f83416d15fa276335dR6)
 1. [Define GraphQL schemas in TypeScript](https://typegraphql.ml/docs/getting-started.html)
-2. [Learn how to fetch data with the Apollo Query component](https://www.apollographql.com/docs/tutorial/queries/)
+1. [Learn how to fetch data with the Apollo Query component](https://www.apollographql.com/docs/tutorial/queries/)
 
 ### Make a query
 
@@ -226,7 +226,7 @@ export class MetaResolver implements ResolverInterface<() => String> {
 and then in `api-gateway.ts`, mount the resolver.
 
 ```js
-  const resolvers = [MetaResolver];
+const resolvers = [MetaResolver];
 ```
 
 Now the server is ready and you can call the `health` endpoint at [https://localhost:5000/api-gateway/](https://localhost:5000/api-gateway/).
@@ -269,7 +269,7 @@ type Props = {
 export const HealthText: React.FC<Props> = ({
   loading,
   health,
-  error
+  error,
 }: Props) => {
   if (loading) {
     return (
@@ -315,12 +315,11 @@ import { useQuery } from "react-apollo";
 
 export const useGetHealth = () => {
   const { loading, data, error, refetch } = useQuery<GetHealth>(getHealth, {
-    ssr: false
+    ssr: false,
   });
   return { loading, data, error, refetch };
 };
 ```
-
 
 And finally `*-controller.tsx` connects data with view components via hooks.
 
@@ -348,12 +347,10 @@ homepage.hello: hello, ${userName}!
 and then in the react view file (client-side)
 
 ```js
-import {t} from 'onefx/lib/iso-i18n';
+import { t } from "onefx/lib/iso-i18n";
 
 function Greetings() {
-  return (
-    <div>{t('homepage.hello', {userName: 'John'})}</div>
-  );
+  return <div>{t("homepage.hello", { userName: "John" })}</div>;
 }
 ```
 
@@ -364,18 +361,19 @@ When users visit this site with `accept-language: en` in the header, which is se
 `t` singleton function does not work in the server-side because the async calls may switch the context and mix it with requests from other languages. In this case, please use `ctx.t` instead.
 
 ## Testing
+
 test files are supposed to be placed in any module like `./__test__/example.test.js` in [ava test utils](https://github.com/avajs/ava/tree/master/docs).
 
 ```js
-import test from 'ava';
+import test from "ava";
 
-test('testname', async t => {
+test("testname", async (t) => {
   // ...
 });
-
 ```
 
 ## Security
+
 Onefx enables secure web app development with
 
 1. CSRF protection that can be exempted at `./config/default.js` (`config.server.noCsrfRoutes`)
@@ -401,21 +399,21 @@ for example, in `default.js`,
 ```
 
 ## Static assets
+
 Static assets are placed in `./client/static/` and loaded into the root directory of the website. Take `./client/static/favicon.png` for example, you can get it at [http://localhost:4100/favicon.png](http://localhost:4100/favicon.png), or use it in the react component:
 
 ```js
-import {assetURL} from 'onefx/lib/asset-url';
+import { assetURL } from "onefx/lib/asset-url";
 
 function ImgExample() {
-  return (
-    <img src={assetURL('favicon.png')}/>
-  );
+  return <img src={assetURL("favicon.png")} />;
 }
 ```
 
 ## Configuration
 
 ### Environment variables
+
 The environment variable is read from commandline as well as `.env` file. Take `PORT` for example,
 
 ```bash
@@ -443,47 +441,47 @@ module.exports = {
   // ...
   server: {
     // ...
-    cdnBase: 'https://example-cdn.net',
-  }
+    cdnBase: "https://example-cdn.net",
+  },
   // ...
-}
+};
 ```
 
 And then when loading static assets, you just follow the same practice with the static assets.
 
 ```js
-import {assetURL} from 'onefx/lib/asset-url';
+import { assetURL } from "onefx/lib/asset-url";
 
 function ImgExample() {
-  return (
-    <img src={assetURL('favicon.png')}/>
-  );
+  return <img src={assetURL("favicon.png")} />;
 }
 ```
 
 ## References
+
 Tech Stack
 
-* [react - view](https://reactjs.org/)
-	* [styletron - local style in JS](https://github.com/rtsao/styletron)
-	* sass - global style in sass
-	* [flexbox - view layout](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [react - view](https://reactjs.org/)
 
-* [redux - state management](https://redux.js.org/)
+  - [styletron - local style in JS](https://github.com/rtsao/styletron)
+  - sass - global style in sass
+  - [flexbox - view layout](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-* [Koa.js - server](http://koajs.com/)
+- [redux - state management](https://redux.js.org/)
 
-* [graphql apollo - api gateway](https://www.apollographql.com/)
+- [Koa.js - server](http://koajs.com/)
 
-* [MongoDB mongoose - database ODM](https://mongoosejs.com/)
+- [graphql apollo - api gateway](https://www.apollographql.com/)
 
-* [MySQL sequalize - database ORM](http://docs.sequelizejs.com/)
+- [MongoDB mongoose - database ODM](https://mongoosejs.com/)
+
+- [MySQL sequalize - database ORM](http://docs.sequelizejs.com/)
 
 Design Resources
 
-* [Carbon Design System](http://carbondesignsystem.com/)
-* [Font Awesome](http://fontawesome.io/)
-* [flaticon - icons and graphics](https://www.flaticon.com/)
+- [Carbon Design System](http://carbondesignsystem.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [flaticon - icons and graphics](https://www.flaticon.com/)
 
 ## Run on Windows
 

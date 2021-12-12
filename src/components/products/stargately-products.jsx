@@ -7,105 +7,86 @@
 
 import React from "react";
 
-
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
-const TITLE = "Showcase";
-const DESCRIPTION =
-  "See the services we build for entrepreneurs and startups";
-
+const TITLE = "Stargately Products";
+const DESCRIPTION = "FinTech + DAO Products";
 
 const users = [
   // Please add in alphabetical order of title.
   {
-    title: 'Beancount.io',
+    title: "Beancount.io",
     description:
-      'Double-entry bookkeeping for managing your teams and personal finance',
+      "Double-entry bookkeeping for managing your teams and personal finance",
     preview: "https://web-beancount.b-cdn.net/beancount-desktop-mobile.png",
-    website: 'https://beancount.io/',
-    source: 'https://github.com/stargately/beancount-mobile',
+    website: "https://beancount.io/",
+    source: "https://github.com/stargately/beancount-mobile",
     fbOpenSource: false,
     pinned: false,
   },
   {
-    title: 'BoomMo (Beta)',
-    description:
-      'Grow your fan base into a community',
+    title: "BoomMo (Beta)",
+    description: "Grow your fan base into a community",
     preview: "https://touchbase.ai/social-media.svg",
-    website: 'https://boommo.com/',
+    website: "https://boommo.com/",
     fbOpenSource: false,
     pinned: false,
   },
   {
-    title: 'Unitask',
+    title: "Touchbase.ai",
     description:
-      'Unify all your JIRA and Github tasks in one sheet',
+      "Easy, open source CRM for everyone to smartly engage more in meaningful relationships",
+    preview:
+      "https://camo.githubusercontent.com/f00c5426be1a19c10cf8596495ba80fec5c3a1e18f1d48466b6c80aad0b5035e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646f687469646671682f696d6167652f75706c6f61642f76313537303138313032392f7765622d6775696775696f2f6775616e78696c61622d73637265656e73686f742e706e67",
+    website: "https://touchbase.ai/",
+    source: "https://github.com/puncsky/touchbase.ai",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: "Unitask",
+    description: "Unify all your JIRA and Github tasks in one sheet",
     preview: "https://tp-misc.b-cdn.net/unitask-demo.png",
-    website: 'https://unitask.tianpan.co/',
-    source: 'https://github.com/stargately/unitask',
+    website: "https://unitask.tianpan.co/",
+    source: "https://github.com/stargately/unitask",
     fbOpenSource: false,
     pinned: false,
   },
+
   {
-    title: 'Touchbase.ai',
-    description: 'Easy, open source CRM for everyone to smartly engage more in meaningful relationships',
-    preview: "https://camo.githubusercontent.com/f00c5426be1a19c10cf8596495ba80fec5c3a1e18f1d48466b6c80aad0b5035e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646f687469646671682f696d6167652f75706c6f61642f76313537303138313032392f7765622d6775696775696f2f6775616e78696c61622d73637265656e73686f742e706e67",
-    website: 'https://touchbase.ai/',
-    source: 'https://github.com/puncsky/touchbase.ai',
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: 'TianPan.co',
-    description: 'A blog on patterns and best practices for startup engineering',
-    preview: "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
-    website: 'https://tianpan.co/',
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: 'Launch Room',
-    description: 'LaunchDarkly client compatible lightweight feature flag manager',
-    preview: "https://touchbase.ai/social-media.svg",
-    // website: 'https://stargately.com/launch-room/',
-    source: 'https://github.com/puncsky/launch-room',
-    doc: "/docs/launch-room",
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: 'Pylon',
-    description: 'Stripe Subscription Manager',
-    preview: "https://stargately.com/img/pylon-architecture.png",
-    // website: 'https://touchbase.ai/',
-    // source: 'https://github.com/puncsky/touchbase.ai',
-    doc: "/docs/pylon",
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: 'Carrier',
-    description: 'Email / SMS / Push Notification manager',
-    preview: "https://touchbase.ai/social-media.svg",
-    // website: 'https://touchbase.ai/',
-    source: 'https://github.com/puncsky/carrier#carrier',
-    doc: "/docs/carrier",
+    title: "TianPan.co",
+    description:
+      "Trusted by millions of engineers to acquire patterns and best practices for startup engineering.",
+    preview:
+      "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
+    website: "https://tianpan.co/",
     fbOpenSource: false,
     pinned: false,
   },
 ];
 
-function Showcase() {
+function StargatelyProducts() {
   return (
     <>
       <main className="container margin-vert--lg">
         <div className="text--center margin-bottom--xl">
-          <h1><a aria-hidden="true" tabIndex="-1"
-                 className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
-                 id="showcase"></a>{TITLE}<a aria-hidden="true" tabIndex="-1" className="hash-link"
-                                             href="#showcase"
-                                             title="Direct link to heading">#</a></h1>
+          <h1>
+            <a
+              aria-hidden="true"
+              tabIndex="-1"
+              className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
+              id="showcase"
+            ></a>
+            {TITLE}
+            <a
+              aria-hidden="true"
+              tabIndex="-1"
+              className="hash-link"
+              href="#showcase"
+              title="Direct link to heading"
+            ></a>
+          </h1>
           <p>{DESCRIPTION}</p>
         </div>
         <div className="row">
@@ -113,7 +94,7 @@ function Showcase() {
             <div key={user.title} className="col col--4 margin-bottom--lg">
               <div className={clsx("card", styles.showcaseUser)}>
                 <div className="card__image">
-                  <img src={user.preview} alt={user.title}/>
+                  <img src={user.preview} alt={user.title} />
                 </div>
                 <div className="card__body">
                   <div className="avatar">
@@ -170,4 +151,4 @@ function Showcase() {
   );
 }
 
-export default Showcase;
+export default StargatelyProducts;
