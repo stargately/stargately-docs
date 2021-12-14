@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import Hls from "hls.js";
 import styles from "./styles.module.css";
 import StargatelyProducts from "../components/products/stargately-products";
 import IconExternalLink from "@theme/IconExternalLink";
@@ -74,13 +75,33 @@ function Feature({ imageUrl, title, description }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  const videoRef = useRef();
+
+  useEffect(() => {
+    var hls = new Hls();
+    hls.loadSource(
+      "https://videodelivery.net/41aa55358b1be9c50ef56062e1598a23/manifest/video.m3u8"
+    );
+    hls.attachMedia(videoRef?.current);
+  }, []);
+
   return (
     <Layout
       title={siteConfig.themeConfig.navbar.title}
       description={siteConfig.themeConfig.title}
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
+        <video
+          className={styles.videoStream}
+          autoPlay
+          muted
+          loop
+          preload="true"
+          poster="https%3A%2F%2Fvideodelivery.net%2F41aa55358b1be9c50ef56062e1598a23%2Fthumbnails%2Fthumbnail.jpg"
+          ref={videoRef}
+        ></video>
+        <div className={clsx("container", styles.heroContainer)}>
           <h1 className="hero__title">
             {Math.random() > 0.5 ? siteConfig.title : "Think big and act on it"}
           </h1>
