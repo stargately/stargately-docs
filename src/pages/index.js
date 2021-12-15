@@ -76,13 +76,35 @@ function Home() {
   const { siteConfig = {} } = context;
 
   const videoRef = useRef();
+  const sourceRef = useRef();
 
   useEffect(() => {
-    var hls = new Hls();
-    hls.loadSource(
-      "https://videodelivery.net/41aa55358b1be9c50ef56062e1598a23/manifest/video.m3u8"
-    );
-    hls.attachMedia(videoRef?.current);
+    const videoSrc =
+      "https://videodelivery.net/41aa55358b1be9c50ef56062e1598a23/manifest/video.m3u8";
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(videoRef?.current);
+    }
+    // HLS.js is not supported on platforms that do not have Media Source
+    // Extensions (MSE) enabled.
+    //
+    // When the browser has built-in HLS support (check using `canPlayType`),
+    // we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video
+    // element through the `src` property. This is using the built-in support
+    // of the plain video element, without using HLS.js.
+    //
+    // Note: it would be more normal to wait on the 'canplay' event below however
+    // on Safari (where you are most likely to find built-in HLS support) the
+    // video.src URL must be on the user-driven white-list before a 'canplay'
+    // event will be emitted; the last video event that can be reliably
+    // listened-for when the URL is not on the white-list is 'loadedmetadata'.
+    else if (videoRef.current.canPlayType("application/vnd.apple.mpegurl")) {
+      sourceRef.current.type = "application/x-mpegURL";
+      videoRef.current.src = videoSrc;
+      videoRef.current.setAttribute("playsinline", true);
+    }
   }, []);
 
   return (
@@ -97,9 +119,11 @@ function Home() {
           muted
           loop
           preload="true"
-          poster="https%3A%2F%2Fvideodelivery.net%2F41aa55358b1be9c50ef56062e1598a23%2Fthumbnails%2Fthumbnail.jpg"
+          poster="https://videodelivery.net/41aa55358b1be9c50ef56062e1598a23/thumbnails/thumbnail.jpg"
           ref={videoRef}
-        ></video>
+        >
+          <source ref={sourceRef} />
+        </video>
         <div className={clsx("container", styles.heroContainer)}>
           <h1 className="hero__title">
             {Math.random() > 0.5 ? siteConfig.title : "Think big and act on it"}
