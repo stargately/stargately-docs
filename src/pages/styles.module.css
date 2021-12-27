@@ -47,7 +47,7 @@
   z-index: 1;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-  max-width: initial;
+  max-width: initial !important;
   width: 100%;
   /* height should add .heroBanner padding */
   height: calc(100% + 4rem * 2);
