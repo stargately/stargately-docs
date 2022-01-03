@@ -35,20 +35,24 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "PRODUCTS",
           items: [
             {
-              label: "OneFx.JS Fullstack Framework",
-              to: "docs/",
+              label: "Beancount.io",
+              to: "https://beancount.io",
             },
             {
-              label: "Pylon Stripe Subscription Manager",
-              to: "docs/onefx-mobile/",
+              label: "BoomMo",
+              to: "https://boommo.com",
+            },
+            {
+              label: "Touchbase",
+              to: "https://touchbase.ai",
             },
           ],
         },
         {
-          title: "Community",
+          title: "COMMUNITY",
           items: [
             {
               label: "Telegram",
@@ -61,7 +65,7 @@ module.exports = {
           ],
         },
         {
-          title: "More",
+          title: "MORE",
           items: [
             {
               label: "About Us",
