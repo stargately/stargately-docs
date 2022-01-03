@@ -3,9 +3,9 @@ id: About Us
 title: About Us
 ---
 
-Stargately is a challenger in SaaS tooling, leveraging best-in-class open source technology to speed up the software development and community building process. Stargately's mission is to warp the startup to the destination galaxy. Starting with double-entry bookkeeping software, Stargately applies cutting-edge innovations from the open-source community into startups, small businesses and online communities, enabling Internet applications and communities to be built with speed and quality.
-
 # About Us
+
+Stargately is a challenger in SaaS tooling, leveraging best-in-class open source technology to speed up the software development and community building process. Stargately's mission is to warp the startup to the destination galaxy. Starting with double-entry bookkeeping software, Stargately applies cutting-edge innovations from the open-source community into startups, small businesses and online communities, enabling Internet applications and communities to be built with speed and quality.
 
 ## Who we are
 
@@ -31,7 +31,7 @@ Think big and act on it
 * Engineers build things anyway. Why not make them big?
 * Bias toward action
 * Build positive feedback loops
-* Dig the tunnel from two directions
+* Decompose and compose
 
 Seek truth from facts
 * Embrace radical transparency
@@ -53,5 +53,3 @@ Customer Obsession
 * Be careful with root-level metrics
 * We are representatives of our customers
 * Make money to build better services, not the reverse
-
-
