@@ -26,6 +26,15 @@ const users = [
     pinned: false,
   },
   {
+    title: "Blockroma",
+    description: "Ethereum web3 compatible blockchain explorer",
+    preview: "https://tp-misc.b-cdn.net/blockroma-v0.1.png",
+    website: "https://boommo.com/",
+    source: "https://github.com/stargately/blockroma",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
     title: "BoomMo (Beta)",
     description: "Grow your fan base into a community",
     preview: "https://touchbase.ai/social-media.svg",
