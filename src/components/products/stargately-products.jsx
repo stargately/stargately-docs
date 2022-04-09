@@ -27,7 +27,7 @@ const users = [
   },
   {
     title: "Blockroma",
-    description: "Ethereum web3 compatible blockchain explorer",
+    description: "EVM compatible blockchains explorer",
     preview: "https://tp-misc.b-cdn.net/blockroma-v0.1.png",
     website: "https://boommo.com/",
     source: "https://github.com/stargately/blockroma",

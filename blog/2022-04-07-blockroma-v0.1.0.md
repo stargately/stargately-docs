@@ -5,12 +5,12 @@ date: 2022-04-07 21:42
 comments: true
 categories: categories
 language: en
-abstract: Blockroma is our latest product that allows anyone to view wallet addresses, transaction hashes, and block information on Ethereum web3 compatible blockchains with a single click.
+abstract: Blockroma is our latest product that allows anyone to view wallet addresses, transaction hashes, and block information on EVM compatible blockchains with a single click.
 ---
 
 ![Blockroma v0.1.0](https://tp-misc.b-cdn.net/blockroma-v0.1.png)
 
-Stargately is on a mission to provide the best DAO community development tools that anyone can use to start building on Web3. [Blockroma](https://blockroma.com/) is our latest product that allows anyone to view wallet addresses, transaction hashes, and block information on Ethereum web3 compatible blockchains with a single click.
+Stargately is on a mission to provide the best DAO community development tools that anyone can use to start building on Web3. [Blockroma](https://blockroma.com/) is our latest product that allows anyone to view wallet addresses, transaction hashes, and block information on EVM compatible blockchains with a single click.
 
 <div style={{position: 'relative', paddingTop: '78.69718309859155%'}}><iframe src="https://iframe.videodelivery.net/02af344923482b629c278d46eb551848?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fvideodelivery.net%2F02af344923482b629c278d46eb551848%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600" style={{border: 'none', position: 'absolute', top: 0, left: 0, height: '100%', width: '100%'}} allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowFullScreen="true" /></div>
 
@@ -28,7 +28,7 @@ blockchain explorers like Blockroma and Etherscan act as search engines to provi
 
 ## Key Features
 
-- View transaction data on Ethereum web3 compatible blockchains.
+- View transaction data on EVM compatible blockchains.
 - Easy to find data for particular TX hashes, addresses, or blocks.
 - Developer-friendly with an open GraphQL API.
 
@@ -36,7 +36,7 @@ blockchain explorers like Blockroma and Etherscan act as search engines to provi
 
 Blockchain and crypto users, traders, and developers frequently reference blockchain explorers to see the status of their recent transactions and measure the pulse of on-chain activity to gauge the overall trends. blockchain explorers offer a straightforward way to explore on-chain data and browse many insights and opportunities. Use Blockroma to:
 
-- Observe activity on Ethereum web3 compatible blockchains
+- Observe activity on EVM compatible blockchains
 - View the latest transactions hashes
 - Keep track of the latest gas fees and transaction fees
 - Develop your own dApps by determining features you like
