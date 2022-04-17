@@ -29,7 +29,7 @@ const users = [
     title: "Blockroma",
     description: "EVM compatible blockchains explorer",
     preview: "https://tp-misc.b-cdn.net/blockroma-v0.1.png",
-    website: "https://boommo.com/",
+    website: "https://blockroma.com/",
     source: "https://github.com/stargately/blockroma",
     fbOpenSource: false,
     pinned: false,
