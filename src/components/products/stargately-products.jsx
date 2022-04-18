@@ -54,16 +54,6 @@ const users = [
     pinned: false,
   },
   {
-    title: "Unitask",
-    description: "Unify all your JIRA and Github tasks in one sheet",
-    preview: "https://tp-misc.b-cdn.net/unitask-demo.png",
-    website: "https://unitask.tianpan.co/",
-    source: "https://github.com/stargately/unitask",
-    fbOpenSource: false,
-    pinned: false,
-  },
-
-  {
     title: "TianPan.co",
     description:
       "Trusted by millions of engineers to acquire patterns and best practices for startup engineering.",
