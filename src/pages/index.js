@@ -6,7 +6,6 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Hls from "hls.js";
 import styles from "./styles.module.css";
 import StargatelyProducts from "../components/products/stargately-products";
-import IconExternalLink from "@theme/IconExternalLink";
 import CloudServices from "../components/cloud-services/cloud-services";
 
 const features = [
@@ -49,7 +48,7 @@ const features = [
         </>
         <br />
         <a href={"https://10x.pub"}>
-          10x.pub <IconExternalLink />
+          10x.pub
         </a>
       </>
     ),
