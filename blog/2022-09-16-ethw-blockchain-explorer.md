@@ -5,7 +5,7 @@ date: 2022-09-16 12:47
 comments: true
 categories: blockroma, data analysis
 language: en
-abstract:
+abstract: Blockroma open-source react blockchain explorer now serves EthereumPoW (ETHW) and its GraphQL APIs for both mainnet and testnet. And here is also how to add EthereumPoW (ETHW) to MetaMask.
 ---
 
 We are pleased to announce that Blockroma now supports **EthereumPoW (ETHW)**.
