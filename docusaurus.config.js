@@ -60,7 +60,7 @@ module.exports = {
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/puncsky",
+              href: "https://twitter.com/stargately",
             },
           ],
         },
