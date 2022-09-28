@@ -5,7 +5,9 @@ title: About Us
 
 # About Us
 
-Stargately is a challenger in SaaS tooling, leveraging best-in-class open source technology to speed up the software development and community building process. Stargately's mission is to warp the startup to the destination galaxy. Starting with double-entry bookkeeping software, Stargately applies cutting-edge innovations from the open-source community into startups, small businesses and online communities, enabling Internet applications and communities to be built with speed and quality.
+Stargately is building Web3 infrastructures for new blockchains. Our current products are blockchain explorer, API and data analytics (https://blockroma.com/), double-entry bookkeeping app (https://beancount.io/), and we are also building an EVM-compatible crypto wallet and open to collaborations and partnerships.
+
+We strive to be a challenger in SaaS tooling, leveraging best-in-class open source technology to speed up the software development and community building process. Stargately's mission is to warp the startup to the destination galaxy. Starting with double-entry bookkeeping software, Stargately applies cutting-edge innovations from the open-source community into startups, small businesses and online communities, enabling Internet applications and communities to be built with speed and quality.
 
 ## Who we are
 
