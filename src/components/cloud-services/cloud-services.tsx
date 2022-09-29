@@ -66,14 +66,14 @@ function CloudServices() {
           <h1>
             <a
               aria-hidden="true"
-              tabIndex="-1"
+              tabIndex={-1}
               className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
               id="CloudServices"
             ></a>
             {TITLE}
             <a
               aria-hidden="true"
-              tabIndex="-1"
+              tabIndex={-1}
               className="hash-link"
               href="#CloudServices"
               title="Direct link to heading"

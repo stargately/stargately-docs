@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Warping startup to the destination galaxy",
-  tagline: "with speed and quality",
+  title: "Warping people and organizations to Web3 galaxy",
+  tagline: "Stargately",
   url: "https://stargately.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -87,7 +87,7 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "classic",
       {
         docs: {
           sidebarCollapsible: false,
