@@ -4,7 +4,7 @@ module.exports = {
   url: "https://stargately.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
   organizationName: "puncsky", // Usually your GitHub org/user name.
   projectName: "stargately-docs", // Usually your repo name.
   stylesheets: ["https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+New"],
