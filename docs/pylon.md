@@ -41,6 +41,14 @@ When registering webhook, add these events to send
 Once the Pylon server is deployed, you could connect to it with merging schema
 
 ```typescript jsx
+import {ApolloServer, introspectSchema, makeRemoteExecutableSchema, mergeSchemas} from "apollo-server-koa";
+import { GraphQLSchema } from "graphql";
+import { HttpLink } from "apollo-link-http";
+import { setContext } from "apollo-link-context";
+import {logger} from "onefx/lib/integrated-gateways/logger";
+import config from "config";
+import { GraphQLRequest } from "apollo-link";
+
 async function safeAppendSchema(schemas: Array<GraphQLSchema>) {
   try {
     const remoteLink = setContext((_: GraphQLRequest, prevContext: any) => {
@@ -69,6 +77,26 @@ async function safeAppendSchema(schemas: Array<GraphQLSchema>) {
     logger.error(`failed to append schema: ${e}`);
   }
 }
+```
+
+Update local schema to merge remote one
+
+```ts
+  const schemas = [await buildSchema({
+    resolvers,
+    emitSchemaFile: {
+      path: sdlPath,
+      commentDescriptions: true,
+    },
+    authChecker: customAuthChecker,
+    validate: false,
+  })];
+
+  await safeAppendSchema(schemas);
+
+  const schema = mergeSchemas({
+    schemas
+  });
 ```
 
 ### Mount the checkout button in your product
