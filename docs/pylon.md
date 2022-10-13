@@ -42,12 +42,13 @@ Once the Pylon server is deployed, you could connect to it with merging schema
 
 ```typescript jsx
 import {ApolloServer, introspectSchema, makeRemoteExecutableSchema, mergeSchemas} from "apollo-server-koa";
-import { GraphQLSchema } from "graphql";
+import { GraphQLSchema, printSchema } from "graphql";
 import { HttpLink } from "apollo-link-http";
 import { setContext } from "apollo-link-context";
 import {logger} from "onefx/lib/integrated-gateways/logger";
 import config from "config";
 import { GraphQLRequest } from "apollo-link";
+import fs from "fs";
 
 async function safeAppendSchema(schemas: Array<GraphQLSchema>) {
   try {
@@ -64,7 +65,7 @@ async function safeAppendSchema(schemas: Array<GraphQLSchema>) {
         fetch,
         headers: {
           "x-client-id": config.get("project"),
-          "x-tenant-id": config.get("env"),
+          "x-tenant-id": "prod",
         },
       })
     );
@@ -79,15 +80,11 @@ async function safeAppendSchema(schemas: Array<GraphQLSchema>) {
 }
 ```
 
-Update local schema to merge remote one
+Update local schema to merge remote one, and emit the new schema file
 
 ```ts
   const schemas = [await buildSchema({
     resolvers,
-    emitSchemaFile: {
-      path: sdlPath,
-      commentDescriptions: true,
-    },
     authChecker: customAuthChecker,
     validate: false,
   })];
@@ -97,6 +94,8 @@ Update local schema to merge remote one
   const schema = mergeSchemas({
     schemas
   });
+
+  fs.writeFileSync(sdlPath, printSchema(schema));
 ```
 
 ### Mount the checkout button in your product
