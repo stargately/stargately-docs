@@ -35,14 +35,6 @@ const users = [
     pinned: false,
   },
   {
-    title: "BoomMo (Beta)",
-    description: "Grow your fan base into a community",
-    preview: "https://touchbase.ai/social-media.svg",
-    website: "https://boommo.com/",
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
     title: "Touchbase.ai",
     description:
       "Easy, open source CRM for everyone to smartly engage more in meaningful relationships",
