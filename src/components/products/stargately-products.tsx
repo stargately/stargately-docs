@@ -14,7 +14,16 @@ const TITLE = "Stargately Products";
 const DESCRIPTION = "FinTech + DAO Products";
 
 const users = [
-  // Please add in alphabetical order of title.
+  {
+    title: "Block Eden",
+    description:
+      "Powering the next wave of decentralized applications. Aptos API and Node Service.",
+    preview:
+      "https://pbs.twimg.com/profile_banners/1576691608061288448/1666069274/1500x500",
+    website: "https://blockeden.xyz/",
+    fbOpenSource: false,
+    pinned: false,
+  },
   {
     title: "Beancount.io",
     description:
