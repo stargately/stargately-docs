@@ -11,7 +11,7 @@ abstract: Blockroma open-source react blockchain explorer now serves EthereumPoW
 We are pleased to announce that Blockroma now supports **EthereumPoW (ETHW)**.
 
 * Mainnet: https://app.blockroma.com/ethw/mainnet/
-* Testnet - Iceberg: https://app.blockroma.com/ethw/iceberg/
+* ~~Testnet - Iceberg: https://app.blockroma.com/ethw/iceberg/~~ ([Deprecated after 2022-10-26](/blog/2022/10/26/congrats-on-ethereum-pow-launch))
 * Source code configuration: [Mainnet](https://github.com/stargately/blockroma/blob/main/config/ethw-mainnet.js), [Testnet](https://github.com/stargately/blockroma/blob/main/config/ethw-iceberg-testnet.js)
 
 Here is how to add EthereumPoW (ETHW) to your MetaMask:
