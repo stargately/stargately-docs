@@ -15,12 +15,21 @@ const DESCRIPTION = "FinTech + DAO Products";
 
 const users = [
   {
-    title: "Block Eden",
+    title: "BlockEden.xyz",
     description:
-      "Powering the next wave of decentralized applications. Aptos API and Node Service.",
+      "RPCs for Sui, Aptos, Solana, and 12 EVM blockchains. BlockEden.xyz is an API marketplace powering DApps of all sizes. Build DApp and scale faster.",
     preview:
       "https://pbs.twimg.com/profile_banners/1576691608061288448/1666069274/1500x500",
     website: "https://blockeden.xyz/",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
+    title: "A Project for AI Agent",
+    description:
+      "Empower yourself with AI writers.",
+    preview:
+      "/img/novelist.jpg",
     fbOpenSource: false,
     pinned: false,
   },
