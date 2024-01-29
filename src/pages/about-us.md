@@ -18,40 +18,32 @@ We are interested in open source technologies.
 Core members are from Google, Facebook, Uber, and silicon valley startups.
 
 
-## What we do
 
-We engage community members in two categories:
+## Culture Values
 
-| Categories |  |
-| --- | --- |
-| Core Developers | We are building community with open source software at [GitHub](https://github.com/stargately)  |
-| Study Groups | We discuss [System Design and Architecture](https://github.com/puncsky/system-design-and-architecture) at 10x.pub |
+### Start with customers
+The most honorable thing for an innovator is that your customers buy and recommend you. All this starts with understanding our customer’s problems and then solving problems for them.
 
-## Community Culture
+### Make magic for our times
+Engineers and designers are not artists but skilled craftsmen dedicated to creating unique, innovative solutions that significantly impact and improve our current era or challenge the status quo of our times.
 
-Think big and act on it
-* Engineers build things anyway. Why not make them big?
-* Bias toward action
-* Build positive feedback loops
-* Decompose and compose
+### Get creative and stand out
+We believe that extraordinary products and services captivate people with their novelty and resonance. To make a lasting impression, we encourage a culture of innovative thinking and creative action.
 
-Seek truth from facts
-* Embrace radical transparency
-* Input more and output more
-* Deliberate practice and immediate feedback
+### Prioritize view from the top
+Originate, adopt, and broadcast big, bold ideas from the top of the information supply chain. 10x better output takes 10x better input.
 
-Make magic
-* Attention to detail
-* Work long, smart, and hard to improve speed and quality
-* Build 10x product with reusable frameworks, primitives, and processes
+### Bridge gaps, a lot
+The market is fair and effective for most of the time. To outperform the market, we need to deep dive into industries, surface ourselves to transactions, and connect dots that are undiscoverable to local optimizers.
 
-Extreme Ownership
-* Success is in our own hands
-* Sign our artwork
-* Our success is symmetrical with our rewards
+### Make relationships matter
+We recognize the immense power and value in personal relationships. Each connection represents a unique bond that is invaluable. We are dedicated to cherishing, nurturing, and reciprocating the value in every interaction, ensuring that no relationship is ever taken for granted.
 
-Customer Obsession
-* Listen to our customers
-* Be careful with root-level metrics
-* We are representatives of our customers
-* Make money to build better services, not the reverse
+### Don't leave the world to jerks
+Leaving the world to jerks would have significant negative consequences for humanity and our planet. Jerks often lack empathy, compassion, and a sense of social responsibility, which can result in disregarding the well-being of others and the environment.
+
+### Small wins towards big bets
+We motivate ourselves strongly with small wins all the time. We keep shipping new products and features every sprint. In general, we prioritize steady and sustainable growth over rapid yet potentially unsustainable expansion. While we're unafraid to make bold moves, we always do so with frugality and efficiency at the forefront.
+
+### Learning as a Service
+We place a strong emphasis on continuous learning, improvement, and knowledge sharing. 

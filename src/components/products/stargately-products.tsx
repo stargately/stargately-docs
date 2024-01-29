@@ -11,7 +11,7 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 
 const TITLE = "Stargately Products";
-const DESCRIPTION = "FinTech + DAO Products";
+const DESCRIPTION = "SaaS, FinTech, DAO";
 
 const users = [
   {
@@ -21,15 +21,6 @@ const users = [
     preview:
       "https://pbs.twimg.com/profile_banners/1576691608061288448/1666069274/1500x500",
     website: "https://blockeden.xyz/",
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: "A Project for AI Agent",
-    description:
-      "Empower yourself with AI writers.",
-    preview:
-      "/img/novelist.jpg",
     fbOpenSource: false,
     pinned: false,
   },
@@ -53,23 +44,18 @@ const users = [
     pinned: false,
   },
   {
-    title: "Touchbase.ai",
-    description:
-      "Easy, open source CRM for everyone to smartly engage more in meaningful relationships",
-    preview:
-      "https://camo.githubusercontent.com/f00c5426be1a19c10cf8596495ba80fec5c3a1e18f1d48466b6c80aad0b5035e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646f687469646671682f696d6167652f75706c6f61642f76313537303138313032392f7765622d6775696775696f2f6775616e78696c61622d73637265656e73686f742e706e67",
-    website: "https://touchbase.ai/",
-    source: "https://github.com/puncsky/touchbase.ai",
+    title: "10x.pub",
+    description: "a tech community to 10x your growth in innovation, investment, and leadership",
+    preview: "https://tp-misc.b-cdn.net/blockeden/professional_accountant_for_businesses_cinematic_portrait.png",
+    website: "https://10x.pub/",
     fbOpenSource: false,
     pinned: false,
   },
   {
-    title: "TianPan.co",
-    description:
-      "Trusted by millions of engineers to acquire patterns and best practices for startup engineering.",
-    preview:
-      "https://res.cloudinary.com/dohtidfqh/image/upload/v1605407995/web-guiguio/tianpan-co-screenshot.png",
-    website: "https://tianpan.co/",
+    title: "Payton",
+    description: "A multi-chain payment solution",
+    preview: "https://tp-misc.b-cdn.net/blockeden/bitcoin_cinematic_kodak_portra_800_105_mm_f1_1.png",
+    website: "https://payton.so/",
     fbOpenSource: false,
     pinned: false,
   },
@@ -135,7 +121,7 @@ function StargatelyProducts() {
                           target="_blank"
                           rel="noreferrer noopener"
                         >
-                          Source
+                          Github
                         </a>
                       )}
                       {user.doc && (

@@ -17,12 +17,12 @@ module.exports = {
         src: "img/logo.svg",
       },
       items: [
-        {
-          to: "docs/",
-          activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
-        },
+        // {
+        //   to: "docs/",
+        //   activeBasePath: "docs",
+        //   label: "Docs",
+        //   position: "left",
+        // },
         { to: "blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/puncsky/stargately-docs",
@@ -34,23 +34,6 @@ module.exports = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "PRODUCTS",
-          items: [
-            {
-              label: "Beancount.io",
-              to: "https://beancount.io",
-            },
-            {
-              label: "BoomMo",
-              to: "https://boommo.com",
-            },
-            {
-              label: "Touchbase",
-              to: "https://touchbase.ai",
-            },
-          ],
-        },
         {
           title: "COMMUNITY",
           items: [

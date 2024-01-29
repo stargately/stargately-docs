@@ -131,19 +131,7 @@ function Home() {
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
         <StargatelyProducts />
-        <CloudServices />
       </main>
     </Layout>
   );
