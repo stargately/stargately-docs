@@ -59,6 +59,14 @@ const users = [
     fbOpenSource: false,
     pinned: false,
   },
+  {
+    title: "Magic Wand",
+    description: "Text to Image Generation",
+    preview: "/img/novelist.jpg",
+    website: "https://payton.so/",
+    fbOpenSource: false,
+    pinned: false,
+  },
 ];
 
 function StargatelyProducts() {
