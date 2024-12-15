@@ -15,6 +15,15 @@ const DESCRIPTION = "SaaS, FinTech, DAO";
 
 const users = [
   {
+    title: "Cuckoo Network",
+    description:
+      "Create stunning AI art and fuel Gen AI apps with your GPU or CPU on Cuckoo Chain. Share, generate, and unlock the power of decentralized AI.",
+    preview: "https://cuckoo.network/img/cuckoo-social-card.webp",
+    website: "https://cuckoo.network/",
+    fbOpenSource: false,
+    pinned: false,
+  },
+  {
     title: "BlockEden.xyz",
     description:
       "RPCs for Sui, Aptos, Solana, and 12 EVM blockchains. BlockEden.xyz is an API marketplace powering DApps of all sizes. Build DApp and scale faster.",
@@ -45,8 +54,10 @@ const users = [
   },
   {
     title: "10x.pub",
-    description: "a tech community to 10x your growth in innovation, investment, and leadership",
-    preview: "https://tp-misc.b-cdn.net/blockeden/professional_accountant_for_businesses_cinematic_portrait.png",
+    description:
+      "a tech community to 10x your growth in innovation, investment, and leadership",
+    preview:
+      "https://tp-misc.b-cdn.net/blockeden/professional_accountant_for_businesses_cinematic_portrait.png",
     website: "https://10x.pub/",
     fbOpenSource: false,
     pinned: false,
@@ -54,15 +65,8 @@ const users = [
   {
     title: "Payton",
     description: "A multi-chain payment solution",
-    preview: "https://tp-misc.b-cdn.net/blockeden/bitcoin_cinematic_kodak_portra_800_105_mm_f1_1.png",
-    website: "https://payton.so/",
-    fbOpenSource: false,
-    pinned: false,
-  },
-  {
-    title: "Magic Wand",
-    description: "Text to Image Generation",
-    preview: "/img/novelist.jpg",
+    preview:
+      "https://tp-misc.b-cdn.net/blockeden/bitcoin_cinematic_kodak_portra_800_105_mm_f1_1.png",
     website: "https://payton.so/",
     fbOpenSource: false,
     pinned: false,
