@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Warping people and organizations to Web3 galaxy",
-  tagline: "Stargately",
+  title: "Stargately | Enterprise AI & Blockchain Solutions",
+  tagline: "The Innovation Ecosystem for AI Solutions",
   url: "https://stargately.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -13,60 +13,53 @@ module.exports = {
       hideOnScroll: true,
       title: "Stargately",
       logo: {
-        alt: "Stargately",
+        alt: "Stargately - Enterprise AI & Blockchain Solutions",
         src: "img/logo.svg",
       },
       items: [
-        // {
-        //   to: "docs/",
-        //   activeBasePath: "docs",
-        //   label: "Docs",
-        //   position: "left",
-        // },
-        { to: "blog", label: "Blog", position: "left" },
+        { to: "about-us", label: "About Us", position: "right" },
         {
-          href: "https://github.com/puncsky/stargately-docs",
-          label: "GitHub",
+          href: "mailto:dev@stargately.com",
+          label: "Contact",
           position: "right",
         },
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "COMMUNITY",
-          items: [
-            {
-              label: "Telegram",
-              href: "https://t.me/system_design_and_architecture",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/stargately",
-            },
-          ],
-        },
-        {
-          title: "MORE",
-          items: [
-            {
-              label: "About Us",
-              to: "/about-us",
-            },
-            {
-              label: "Blog",
-              href: "https://tianpan.co/",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/puncsky",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Stargately.com`,
+      copyright: `Copyright © ${new Date().getFullYear()} Stargately.com | Enterprise AI & Blockchain Solutions`,
     },
+    // Improved site performance
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    // SEO optimization
+    metadata: [
+      {
+        name: "description",
+        content:
+          "Stargately develops enterprise-grade AI and blockchain solutions including Cuckoo.Network, BlockEden.xyz, and Beancount.io to empower organizations with technological excellence.",
+      },
+      {
+        name: "keywords",
+        content:
+          "artificial intelligence, blockchain, enterprise solutions, AI platform, decentralized finance, Web3, cloud infrastructure, fintech",
+      },
+      { name: "robots", content: "index, follow" },
+      { name: "author", content: "Stargately" },
+    ],
+  },
+  // Add custom head tags through the presets configuration
+  customFields: {
+    description:
+      "Enterprise-grade AI and blockchain solutions for organizations seeking technological excellence",
+    ogImage: "https://stargately.com/img/social-card.png",
+    orgName: "Stargately",
+    orgUrl: "https://stargately.com/",
+    orgLogo: "https://stargately.com/img/logo.svg",
+    githubUrl: "https://github.com/stargately",
   },
   presets: [
     [
@@ -81,17 +74,23 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/stargately/stargately-docs/edit/master/",
+          editUrl: "https://github.com/stargately/stargately-docs/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
         gtag: {
-          trackingID: 'G-RP4FY9MQKR',
+          trackingID: "G-RP4FY9MQKR",
           anonymizeIP: false,
         },
       },
     ],
+  ],
+  // Custom scripts to add to the end of <head>
+  scripts: [
+    {
+      src: "/js/schema.js",
+      async: true,
+    },
   ],
 };

@@ -10,140 +10,190 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
-const TITLE = "Stargately Products";
-const DESCRIPTION = "SaaS, FinTech, DAO";
+const TITLE = "Our Innovation Portfolio";
+const DESCRIPTION =
+  "Discover our suite of enterprise-grade AI and blockchain solutions";
 
-const users = [
+const CATEGORIES = [
+  { id: "all", name: "All Solutions" },
+  { id: "blockchain", name: "Blockchain" },
+  { id: "ai", name: "Artificial Intelligence" },
+  { id: "fintech", name: "FinTech" },
+];
+
+interface Product {
+  title: string;
+  description: string;
+  preview: string;
+  website: string;
+  source?: string;
+  doc?: string;
+  categories: string[];
+  featured: boolean;
+}
+
+const products: Product[] = [
   {
     title: "Cuckoo Network",
     description:
-      "Create stunning AI art and fuel Gen AI apps with your GPU or CPU on Cuckoo Chain. Share, generate, and unlock the power of decentralized AI.",
+      "Enterprise-grade decentralized AI platform enabling organizations to create, share, and monetize AI models with unprecedented security and scalability.",
     preview: "https://cuckoo.network/img/cuckoo-social-card.webp",
     website: "https://cuckoo.network/",
-    fbOpenSource: false,
-    pinned: false,
+    doc: "https://cuckoo.network/docs/",
+    categories: ["ai", "blockchain"],
+    featured: true,
   },
   {
     title: "BlockEden.xyz",
     description:
-      "RPCs for Sui, Aptos, Solana, and 12 EVM blockchains. BlockEden.xyz is an API marketplace powering DApps of all sizes. Build DApp and scale faster.",
+      "High-performance blockchain infrastructure providing enterprise-ready RPCs for Sui, Aptos, Solana, and 12+ EVM chains, powering the next generation of Web3 applications.",
     preview:
       "https://pbs.twimg.com/profile_banners/1576691608061288448/1666069274/1500x500",
     website: "https://blockeden.xyz/",
-    fbOpenSource: false,
-    pinned: false,
+    categories: ["blockchain"],
+    featured: true,
   },
   {
     title: "Beancount.io",
     description:
-      "Double-entry bookkeeping for managing your teams and personal finance",
+      "Advanced financial management platform with AI-powered analytics, offering double-entry bookkeeping for enterprise teams and sophisticated personal finance tracking.",
     preview: "https://web-beancount.b-cdn.net/beancount-desktop-mobile.png",
     website: "https://beancount.io/",
     source: "https://github.com/stargately/beancount-mobile",
-    fbOpenSource: false,
-    pinned: false,
+    categories: ["fintech", "ai"],
+    featured: true,
   },
   {
     title: "Blockroma",
-    description: "EVM compatible blockchains explorer",
+    description:
+      "Comprehensive blockchain explorer for EVM-compatible networks, providing real-time analytics, transaction monitoring, and smart contract verification for enterprise users.",
     preview: "https://tp-misc.b-cdn.net/blockroma-v0.1.png",
     website: "https://blockroma.com/",
     source: "https://github.com/stargately/blockroma",
-    fbOpenSource: false,
-    pinned: false,
+    categories: ["blockchain"],
+    featured: false,
   },
   {
     title: "10x.pub",
     description:
-      "a tech community to 10x your growth in innovation, investment, and leadership",
+      "Exclusive professional network leveraging AI to connect innovators, investors, and leaders, facilitating knowledge exchange and strategic partnerships in emerging technologies.",
     preview:
       "https://tp-misc.b-cdn.net/blockeden/professional_accountant_for_businesses_cinematic_portrait.png",
     website: "https://10x.pub/",
-    fbOpenSource: false,
-    pinned: false,
+    categories: ["ai"],
+    featured: false,
   },
   {
     title: "Payton",
-    description: "A multi-chain payment solution",
+    description:
+      "Enterprise-grade multi-chain payment infrastructure enabling secure, compliant, and efficient cross-border transactions for businesses operating in regulated environments.",
     preview:
       "https://tp-misc.b-cdn.net/blockeden/bitcoin_cinematic_kodak_portra_800_105_mm_f1_1.png",
     website: "https://payton.so/",
-    fbOpenSource: false,
-    pinned: false,
+    categories: ["blockchain", "fintech"],
+    featured: false,
   },
 ];
 
 function StargatelyProducts() {
+  const [activeCategory, setActiveCategory] = React.useState("all");
+
+  const filteredProducts = React.useMemo(() => {
+    if (activeCategory === "all") {
+      return products;
+    }
+    return products.filter((product) =>
+      product.categories.includes(activeCategory),
+    );
+  }, [activeCategory]);
+
   return (
-    <>
-      <main className="container margin-vert--lg">
-        <div className="text--center margin-bottom--xl">
-          <h1>
-            <a
-              aria-hidden="true"
-              tabIndex="-1"
-              className="anchor enhancedAnchor_node_modules-@docusaurus-theme-classic-lib-theme-Heading-"
-              id="showcase"
-            ></a>
-            {TITLE}
-            <a
-              aria-hidden="true"
-              tabIndex="-1"
-              className="hash-link"
-              href="#showcase"
-              title="Direct link to heading"
-            ></a>
-          </h1>
-          <p>{DESCRIPTION}</p>
+    <section className={styles.productsSection}>
+      <div className="container margin-vert--xl">
+        <div className="text--center margin-bottom--lg">
+          <h2 className={styles.sectionTitle}>{TITLE}</h2>
+          <p className={styles.sectionDescription}>{DESCRIPTION}</p>
         </div>
+
+        <div className={styles.categoryFilters}>
+          {CATEGORIES.map((category) => (
+            <button
+              key={category.id}
+              className={clsx(
+                styles.categoryButton,
+                activeCategory === category.id && styles.categoryButtonActive,
+              )}
+              onClick={() => setActiveCategory(category.id)}
+            >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
         <div className="row">
-          {users.map((user) => (
-            <div key={user.title} className="col col--4 margin-bottom--lg">
-              <div className={clsx("card", styles.showcaseUser)}>
+          {filteredProducts.map((product) => (
+            <div key={product.title} className="col col--4 margin-bottom--lg">
+              <div
+                className={clsx(
+                  "card",
+                  styles.productCard,
+                  product.featured && styles.featuredProduct,
+                )}
+              >
+                {product.featured && (
+                  <div className={styles.featuredBadge}>Featured</div>
+                )}
                 <div className="card__image">
-                  <img src={user.preview} alt={user.title} />
+                  <img
+                    src={product.preview}
+                    alt={product.title}
+                    className={styles.productImage}
+                  />
                 </div>
                 <div className="card__body">
-                  <div className="avatar">
-                    <div className="avatar__intro margin-left--none">
-                      <h4 className="avatar__name">{user.title}</h4>
-                      <small className="avatar__subtitle">
-                        {user.description}
-                      </small>
-                    </div>
+                  <h3 className={styles.productTitle}>{product.title}</h3>
+                  <p className={styles.productDescription}>
+                    {product.description}
+                  </p>
+                  <div className={styles.productCategories}>
+                    {product.categories.map((cat) => (
+                      <span key={cat} className={styles.categoryTag}>
+                        {CATEGORIES.find((c) => c.id === cat)?.name}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                {(user.website || user.source || user.doc) && (
+                {(product.website || product.source || product.doc) && (
                   <div className="card__footer">
-                    <div className="button-group button-group--block">
-                      {user.website && (
+                    <div className={styles.productActions}>
+                      {product.website && (
                         <a
-                          className="button button--small button--secondary button--block"
-                          href={user.website}
+                          className="button button--primary"
+                          href={product.website}
                           target="_blank"
                           rel="noreferrer noopener"
                         >
-                          Website
+                          Explore Solution
                         </a>
                       )}
-                      {user.source && (
+                      {product.source && (
                         <a
-                          className="button button--small button--secondary button--block"
-                          href={user.source}
+                          className="button button--outline button--secondary"
+                          href={product.source}
                           target="_blank"
                           rel="noreferrer noopener"
                         >
-                          Github
+                          View Source
                         </a>
                       )}
-                      {user.doc && (
+                      {product.doc && (
                         <a
-                          className="button button--small button--secondary button--block"
-                          href={user.doc}
+                          className="button button--outline button--secondary"
+                          href={product.doc}
                           target="_blank"
                           rel="noreferrer noopener"
                         >
-                          Doc
+                          Documentation
                         </a>
                       )}
                     </div>
@@ -153,8 +203,8 @@ function StargatelyProducts() {
             </div>
           ))}
         </div>
-      </main>
-    </>
+      </div>
+    </section>
   );
 }
 

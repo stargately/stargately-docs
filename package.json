@@ -5,10 +5,12 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "start:port": "docusaurus start --port",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "serve:port": "docusaurus serve --port"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",
